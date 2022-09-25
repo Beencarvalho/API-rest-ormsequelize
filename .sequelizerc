@@ -1,0 +1,10 @@
+const path = require('path');
+
+module.exports = {
+    'config': path.resolve('/projetos/orm-sequelize/api/config', '/projetos/orm-sequelize/api/config/config.json'),
+    'models-path': path.resolve('/projetos/orm-sequelize/api/models'),
+    'seeders-path': path.resolve('/projetos/orm-sequelize/api/seeders'),
+    'migrations-path': path.resolve('/projetos/orm-sequelize/api/migrations')
+}
+
+//esse arquivo exportas os caminhos para o sequelize encontre os outros arquivos quando não forem usados na pasta raiz do projeto.
